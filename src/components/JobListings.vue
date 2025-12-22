@@ -1,8 +1,8 @@
 <script setup>
   import jobsData from '@/jobs.json'
-  import { ref } from 'vue';
+  import { onMounted, ref, reactive } from 'vue';
+  import axios from 'axios';
   import JobListing from './JobListing.vue';
-  // onMounted(()=> console.log(jobsData));
 
   defineProps({
     limit: Number,
@@ -11,8 +11,29 @@
       default: false
     }
   })
+
+  const state = reactive({
+    jobs: [],
+    isLoading: true
+  })
   
-  const jobs = ref(jobsData)
+  onMounted(async () => {
+    try {
+      const response = await axios.get('http://localhost:8000/jobs');
+      if (response.data) {
+        state.jobs =  await response.data
+      } else {
+        window.alert('No data load!')
+      }
+      
+    } catch (error) {
+      console.error('Error Fetching Jobs: ', error);
+      // Can launch a specific page/component here
+    } finally {
+      state.isLoading = false
+    }
+  })
+
 </script>
 
 <template>
@@ -22,7 +43,7 @@
         Browse Jobs
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <JobListing v-for="job in jobs.slice(0, limit || jobs.length)" :key="job.id" :job />
+        <JobListing v-for="job in state.jobs.slice(0, limit || state.jobs.length)" :key="job.id" :job="job" />
       </div>
     </div>
   </section>

@@ -2,9 +2,10 @@
   import { ref } from 'vue';
   import axios from 'axios';
   import { useRouter } from 'vue-router';
+  import { useToast } from "vue-toastification";
 
-  const router = useRouter()
-
+  const router = useRouter();
+  const toast = useToast();
   const newJob = ref({
     type: '',
     title: '',
@@ -17,7 +18,7 @@
       contactEmail: '',
       contactPhone: ''
     }
-  })
+  });
 
   const submit = async () => {
     const data = {
@@ -39,9 +40,12 @@
       const response = await axios.post('/api/jobs', data)
       console.log(response.data.id);
       const jobId = await response.data.id;
+      toast.success('Job Successfuly Saved.')
       router.push(`/jobs/${jobId}`)
     } catch (error) {
       console.error('Error Record New Job:', error);
+      toast.error('Job Unsuccessfuly Saved.')
+      router.push(`/`)
     } finally {
     newJob.value = {
       type: '',

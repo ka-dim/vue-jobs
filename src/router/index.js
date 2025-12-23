@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import HomePage from "@/views/HomePage.vue";
+import JobView from "@/views/JobView.vue";
 import JobsView from "@/views/JobsView.vue";
 import NotFoundPage from "@/views/NotFoundPage.vue";
 
@@ -14,6 +15,11 @@ const routes = [
     path: "/jobs",
     name: "jobsView",
     component: JobsView,
+  },
+  {
+    path: "/jobs/:id(\\d+)",
+    name: "jobView",
+    component: JobView,
   },
   {
     path: "/:pathMatch(.*)",

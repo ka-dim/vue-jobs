@@ -18,7 +18,7 @@
     isLoading: true
   })
   
-  const timeOut = 3000 * Math.random()
+  const timeOut = 1000 * Math.random()
   
   onMounted( () => {
     setTimeout( async () => {  
@@ -43,7 +43,7 @@
 
 <template>
   <div v-if="state.isLoading">
-    <PulseLoader class="flex h-screen justify-center items-center"/>
+    <PulseLoader class="flex h-32 justify-center items-center"/>
   </div>
   <div v-else>
     <section class="bg-green-50 px-4 py-10">

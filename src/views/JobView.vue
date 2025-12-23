@@ -5,9 +5,6 @@
   import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
 
   const route = useRoute();
-  onMounted(()=>{
-    console.log(route.params.id);
-  })
 
   const jobId = route.params.id;
 

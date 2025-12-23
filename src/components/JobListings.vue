@@ -23,7 +23,7 @@
   onMounted( () => {
     setTimeout( async () => {  
       try {
-        const response = await axios.get('http://localhost:8000/jobs');
+        const response = await axios.get('/api/jobs');
         if (response.data) {
           state.jobs =  await response.data
         } else {

@@ -5,6 +5,7 @@ import JobView from "@/views/JobView.vue";
 import JobsView from "@/views/JobsView.vue";
 import NotFoundPage from "@/views/NotFoundPage.vue";
 import AddJobPage from "@/views/AddJobPage.vue";
+import EditJobPage from "@/views/EditJobPage.vue";
 
 const routes = [
   {
@@ -26,6 +27,11 @@ const routes = [
     path: "/jobs/add",
     name: "AddJob",
     component: AddJobPage,
+  },
+  {
+    path: "/jobs/edit/:id",
+    name: "EditJob",
+    component: EditJobPage,
   },
   {
     path: "/:pathMatch(.*)",

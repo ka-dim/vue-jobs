@@ -1,10 +1,14 @@
 <script setup>
   import { onMounted,reactive } from 'vue';
-  import { RouterLink, useRoute } from 'vue-router';
+  import { RouterLink, useRoute, useRouter } from 'vue-router';
   import axios from 'axios';
   import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
+  import { useToast } from 'vue-toastification';
 
   const route = useRoute();
+  const router = useRouter();
+  
+  const toast = useToast();
 
   const jobId = route.params.id;
 
@@ -32,6 +36,21 @@
       }
     }, timeOut);
   })
+
+  const deleteJob = async () => {
+    try {
+      const confirmation =  window.confirm("You are about to delete the job. Are you sure?")
+      if (confirmation) {
+        await axios.delete(`/api/jobs/${jobId}`);
+        toast.success('Job Deleted Successfuly .')
+        router.push('/jobs')
+      }
+    } catch (error) {
+      console.error('Error Deleting Job: ', error);
+      toast.error('Error Deleting Job');
+      router.push('/jobs')
+    }
+  }
 </script>
 
 <template>
@@ -105,6 +124,7 @@
                 >Edit Job</RouterLink
               >
               <button
+                @click="deleteJob"
                 class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
               >
                 Delete Job

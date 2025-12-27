@@ -85,45 +85,46 @@
       }
     },
     {
-      "id": "1ed8",
-      "type": "Part-Time",
-      "title": "Bryana Mitchell",
-      "description": "Aut atque ab explicabo architecto iure.",
+      "type": "Internship",
+      "title": "Aline Kidd",
+      "description": "Est aliqua Laboris",
+      "salary": "$60K - $70K",
+      "location": "Voluptas maiores rei",
+      "company": {
+        "name": "Dixon and Hill Trading",
+        "description": "Aliquam laboriosam ",
+        "contactEmail": "gefum@mailinator.com",
+        "contactPhone": "+1 (176) 471-9975"
+      },
+      "id": "1ed8"
+    },
+    {
+      "type": "Remote",
+      "title": "Harriet Pierce",
+      "description": "Fugit autem earum a",
       "salary": "$150K - $175K",
+      "location": "Ut corporis voluptat",
       "company": {
-        "name": "Thiel, Friesen and Graham",
-        "description": "Effertz Group",
-        "contactEmail": "fakedata32767@gmail.com",
-        "contactPhone": "920-033-2254"
-      }
+        "name": "Richardson and King LLC",
+        "description": "Cum soluta in delect",
+        "contactEmail": "qomomisony@mailinator.com",
+        "contactPhone": "+1 (126) 682-4616"
+      },
+      "id": "06ab"
     },
     {
-      "id": "06ab",
-      "type": "Part-Time",
-      "title": "Kiara Mosley",
-      "description": "Voluptas minima dolo",
-      "salary": "$80K - $90K",
-      "location": "",
-      "company": {
-        "name": "Lyons and Rose Trading",
-        "description": "Maiores consequuntur",
-        "contactEmail": "gozexifime@mailinator.com",
-        "contactPhone": "+1 (602) 856-3091"
-      }
-    },
-    {
-      "id": "1662",
       "type": "Part-Time",
       "title": "Axel Briggs",
       "description": "Aspernatur temporibu",
       "salary": "$150K - $175K",
-      "location": "",
+      "location": "LoLandy",
       "company": {
         "name": "Bridges and Hicks Co",
         "description": "Adipisicing ut minim",
         "contactEmail": "wajysurisy@mailinator.com",
         "contactPhone": "+1 (615) 272-6856"
-      }
+      },
+      "id": "1662"
     },
     {
       "id": "651c",
@@ -154,102 +155,18 @@
       }
     },
     {
-      "id": "42c3",
-      "type": "Internship",
-      "title": "Dexter Horn",
-      "description": "Architecto voluptate",
-      "salary": "Under $50K",
-      "location": "Commodo delectus qu",
-      "company": {
-        "name": "Lewis and Lewis Co",
-        "description": "Numquam nisi neque c",
-        "contactEmail": "wipi@mailinator.com",
-        "contactPhone": "+1 (365) 651-9568"
-      }
-    },
-    {
-      "id": "9a45",
-      "type": "Part-Time",
-      "title": "Kerry Garner",
-      "description": "Voluptas quis sequi ",
-      "salary": "$70K - $80K",
-      "location": "Hic est adipisicing ",
-      "company": {
-        "name": "Bernard and Cameron LLC",
-        "description": "Omnis quos eveniet ",
-        "contactEmail": "koqyba@mailinator.com",
-        "contactPhone": "+1 (579) 706-5285"
-      }
-    },
-    {
-      "id": "a1a2",
-      "type": "Full-Time",
-      "title": "Lilah Glass",
-      "description": "Incididunt facere qu",
-      "salary": "$60K - $70K",
-      "location": "Animi numquam non r",
-      "company": {
-        "name": "Velez and Stanley Traders",
-        "description": "Repellendus Adipisc",
-        "contactEmail": "rifihyd@mailinator.com",
-        "contactPhone": "+1 (848) 556-7293"
-      }
-    },
-    {
-      "id": "d483",
-      "type": "Full-Time",
-      "title": "Stephen Ware",
-      "description": "Et natus iure id ame",
-      "salary": "$70K - $80K",
-      "location": "Qui cumque est saep",
-      "company": {
-        "name": "Hooper Puckett Plc",
-        "description": "Aut consequuntur mol",
-        "contactEmail": "dobuhyboq@mailinator.com",
-        "contactPhone": "+1 (542) 559-3183"
-      }
-    },
-    {
-      "type": "Full-Time",
-      "title": "Jordan Kamtchik",
-      "description": "Juste pour acrire quelque chose pour remplir cet espace. Ne pas juger de la pertinance de cette phrase. ",
-      "salary": "Over $200K",
-      "location": "Pariatur Omnis sunt",
-      "company": {
-        "name": "Gutierrez Holland Traders",
-        "description": "C est une compagnie qui se bat bien dans ce qu'elle fait pour y arriver je dois dire qu elle fait bien plus que ce que j avais imaginer. ",
-        "contactEmail": "sutuqoqilo@mailinator.com",
-        "contactPhone": "+1 (374) 747-4618"
-      },
-      "id": "623c"
-    },
-    {
-      "id": "af7b",
-      "type": "Part-Time",
-      "title": "Amela Huber",
-      "description": "Quae laborum Ea ali",
+      "id": "1bbe",
+      "type": "Remote",
+      "title": "Lee Andrews",
+      "description": "Reiciendis eius mole",
       "salary": "$90K - $100K",
-      "location": "Enim dolor eveniet ",
+      "location": "Blanditiis vero vero",
       "company": {
-        "name": "Dillard Carter Inc",
-        "description": "Qui qui doloribus au",
-        "contactEmail": "xeferace@mailinator.com",
-        "contactPhone": "+1 (246) 554-9417"
+        "name": "Parks Jones Co",
+        "description": "Aut vero repudiandae",
+        "contactEmail": "desyziwyci@mailinator.com",
+        "contactPhone": "+1 (705) 943-2701"
       }
-    },
-    {
-      "type": "Full-Time",
-      "title": "Taylor Mendoza",
-      "description": "I will cook it!!!",
-      "salary": "$125K - $150K",
-      "location": "Earum aliquip est qu",
-      "company": {
-        "name": "Greer and Mcintyre Co",
-        "description": "Consequatur at sapie",
-        "contactEmail": "cepejy@mailinator.com",
-        "contactPhone": "+1 (585) 635-2279"
-      },
-      "id": "55e5"
     }
   ]
 }

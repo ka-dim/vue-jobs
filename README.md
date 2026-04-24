@@ -1,38 +1,33 @@
-# .
+# Vue.js Jobs App — Learning Project
 
-This template should help get you started developing with Vue 3 in Vite.
+## About
 
-## Recommended IDE Setup
+Job listing app built by following the
+[Vue.js Crash Course 2024 by Traversy Media](https://www.youtube.com/watch?v=VeNfHj6MhgA).
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+I also experimented with adding dynamic job list filtering,
+which was not covered in the tutorial.
 
-## Recommended Browser Setup
+> **Note:** This is a learning exercise. Some parts of the code are
+> experimental and unfinished.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Tech Stack
 
-## Customize configuration
+- Vue 3 (Composition API)
+- Vite
+- Tailwind CSS
+- Vue Router
+- Axios
+- json-server (mock backend)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Getting Started
 
-## Project Setup
-
-```sh
+```bash
 npm install
-```
 
-### Compile and Hot-Reload for Development
+Start the mock backend:
+json-server --watch src/jobs.json --port 8000
 
-```sh
+Start the app:
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
